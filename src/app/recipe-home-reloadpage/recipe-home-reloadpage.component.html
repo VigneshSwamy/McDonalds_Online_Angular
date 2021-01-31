@@ -1,0 +1,17 @@
+<a style="cursor: pointer;" class="list-group-item clearfix" *ngFor ="let home of recipehome">
+    <div class="pull-left">
+        <h4 class="list-group-item-heading">{{ home.name }}</h4>
+        <p class="list-group-item-text">{{ home.description }}</p>
+    </div>
+    <div>
+        <span class="pull-right">
+              <img
+                [src]="home.imagePath1"
+                alt="{{ home.name }}"
+                class="img-responsive"                
+                >
+        </span>
+    </div>     
+
+</a>
+<h3> <a routerLink="/recipes" routerLinkActive="active">>>>>Next</a></h3>  
